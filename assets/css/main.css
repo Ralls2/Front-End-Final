@@ -1314,11 +1314,10 @@ section {
 .gallery {
   overflow: hidden;
   background-color: #fff0fa;
-  align-content: center;
+  text-align: center;
 }
 .gallery .swiper-slide {
-  margin: 20px;
-  align-items: center;
+  margin: 20px auto;
 }
 
 .gallery .img-fluid {
