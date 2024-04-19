@@ -776,7 +776,28 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Book a Table</button></div>
+              <!-- Button trigger modal -->
+              <div class="text-center">
+                <button type="Button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitButton">
+                  Book a Table
+                </button>
+
+                <div class="modal fade" id="submitButton" tabindex="-1" aria-labelledby="submitButtonLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="submitButtonLabel">Your Booking Has Been Submitted!!</h1>
+                      </div>
+                      <div class="modal-body">
+                        Thank you for booking with us! Please keep a look out for an email from us confirming that you request has been verified.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Button trigger modal -->
             </form>
           </div><!-- End Reservation Form -->
 
@@ -889,7 +910,28 @@
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <!-- Button trigger modal -->
+          <div class="text-center">
+            <button type="Button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sendButton">
+              Send Message
+            </button>
+
+            <div class="modal fade" id="sendButton" tabindex="-1" aria-labelledby="sendButtonLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sendButtonLabel">Thank you for contacting us!</h1>
+                  </div>
+                  <div class="modal-body">
+                    We will be in touch with you with in the next 2 days.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Button trigger modal -->
         </form><!--End Contact Form -->
 
       </div>
@@ -980,6 +1022,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  
 </body>
 
 </html>
